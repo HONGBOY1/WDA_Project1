@@ -10,6 +10,7 @@ public class WorldTime extends JFrame{
     public boolean aa;
     public Thread t1;
     public JLabel lblCenter;
+	public Object now;
 
     public WorldTime(){
             

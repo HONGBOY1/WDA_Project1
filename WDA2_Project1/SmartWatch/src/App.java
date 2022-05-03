@@ -1,7 +1,7 @@
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.plaf.TableUI;
 
 import java.awt.BorderLayout;
 
@@ -23,8 +23,10 @@ public class App extends JFrame{
     Color color = (Color.WHITE);
 
     public App() {  // App  실행 함수
-    
+        
         WorldTime world = new WorldTime();   // 세계시간 메소드 불러 오기
+        
+        world.lblCenter = new JLabel("",JLabel.CENTER);
 
         btnAlarm = new JButton("알람");
         btnStopWatch = new JButton("스톱워치");
@@ -48,8 +50,8 @@ public class App extends JFrame{
 
         add(pnlMain);
 
+        
         world.ThreadTime(); // 실행과 동시에 실행
-
         // 버튼 클릭 이벤트
         btnAlarm.addActionListener((e)->{
             world.t1.interrupt(); 
@@ -73,7 +75,7 @@ public class App extends JFrame{
         setVisible(true);
         
     }
-
+    
     public static void main(String[] args)  {
         JFrame.setDefaultLookAndFeelDecorated(true);
         new App();
