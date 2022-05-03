@@ -25,7 +25,7 @@ public class App extends JFrame{
     public App() {  // App  실행 함수
         
         WorldTime world = new WorldTime();   // 세계시간 메소드 불러 오기
-        
+
         world.lblCenter = new JLabel("",JLabel.CENTER);
 
         btnAlarm = new JButton("알람");
@@ -52,6 +52,7 @@ public class App extends JFrame{
 
         
         world.ThreadTime(); // 실행과 동시에 실행
+        
         // 버튼 클릭 이벤트
         btnAlarm.addActionListener((e)->{
             world.t1.interrupt(); 
