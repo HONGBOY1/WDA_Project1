@@ -5,6 +5,8 @@ import java.util.Calendar;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+import javafx.scene.text.Font;
+
 public class WorldTime extends JFrame{
     public boolean aa;
     public Thread t1;
@@ -16,7 +18,6 @@ public class WorldTime extends JFrame{
     }
 
     public void ThreadTime() {
-        
         t1 = new Thread() {
            public void run() {
                

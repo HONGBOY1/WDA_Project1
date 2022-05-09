@@ -12,6 +12,8 @@ import Alarm.Alarm;
 
 import javafx.scene.paint.Color;
 
+import java.awt.Font;
+
 public class App extends JFrame{
 
     // 이동하는 버튼 변수
@@ -19,15 +21,20 @@ public class App extends JFrame{
     private JButton btnStopWatch;
     private JButton btnTimer;
     private JButton btnWorldTime;
-    
+
+    Font font;
+
     Color color = (Color.WHITE);
 
     public App() {  // App  실행 함수
         
+       font = new Font("맑은 고딕",Font.BOLD,35); //폰트 기본값
+
         WorldTime world = new WorldTime();   // 세계시간 메소드 불러 오기
 
         world.lblCenter = new JLabel("",JLabel.CENTER);
-
+        world.lblCenter.setFont(font);
+        
         btnAlarm = new JButton("알람");
         btnStopWatch = new JButton("스톱워치");
         btnTimer = new JButton("타이머");
@@ -68,18 +75,7 @@ public class App extends JFrame{
             world.ThreadTime();
         });
         
-        // 스윙 창 띄우기
-        setTitle("Timer");
-        setSize(500,500);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-        setVisible(true);
         
     }
     
-    public static void main(String[] args)  {
-        JFrame.setDefaultLookAndFeelDecorated(true);
-        new App();
-        
-    }
 }
