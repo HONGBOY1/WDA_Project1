@@ -5,7 +5,6 @@ import java.util.Calendar;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import javafx.scene.text.Font;
 
 public class WorldTime extends JFrame{
     public boolean aa;
@@ -39,7 +38,7 @@ public class WorldTime extends JFrame{
                    lblCenter.setText(now.toString());
                               
                try {
-                       Thread.sleep(1000); 
+                    Thread.sleep(1000); 
                } catch(InterruptedException ie) {
                    ie.printStackTrace();
                    aa = false;
