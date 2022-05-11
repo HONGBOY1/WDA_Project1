@@ -39,10 +39,14 @@ public class App extends JFrame{
 
     public App() {  // App  실행 함수
     
-
+        
        font = new Font("맑은 고딕",Font.BOLD,35); //폰트 기본값
 
         WorldTime world = new WorldTime();   // 세계시간 메소드 불러 오기
+        
+        // 실행과 동시에 실행
+        world.aa=true;
+        world.ThreadTime(); 
 
         world.lblCenter = new JLabel("",JLabel.CENTER);
         world.lblCenter.setFont(font);
@@ -75,7 +79,7 @@ public class App extends JFrame{
         add(pnlMain);
 
         
-        world.ThreadTime(); // 실행과 동시에 실행
+        
         
         // 버튼 클릭 이벤트
         btnAlarm.addActionListener((e)->{
@@ -91,15 +95,18 @@ public class App extends JFrame{
             world.aa=true;
             world.ThreadTime();
         });
+
+        // 이전 버튼 
         Previous.addActionListener((e)->{
             new Index();
             setVisible(false);
         });
+
         Dimension frameSize = getSize();
         Dimension windowSize = Toolkit.getDefaultToolkit().getScreenSize();
         setLocation((windowSize.width - frameSize.width) / 2,
                 (windowSize.height - frameSize.height) / 2);
-        setTitle("Smart Watch");
+        setTitle("Watch");
         setSize(500,500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
