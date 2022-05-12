@@ -9,10 +9,9 @@ import WorldTime.WorldTime;
 import Timer.Timer;
 import StopWatch.StopWatch;
 import Alarm.Alarm;
-import javafx.*;
-import javafx.scene.paint.Color;
-import javafx.stage.Window;
 
+
+import javafx.scene.paint.Color;
 import java.awt.Font;
 
 
@@ -77,9 +76,6 @@ public class App extends JFrame{
         pnlMain.add(pnlNorth, BorderLayout.NORTH);
         add(pnlMain);
 
-        
-        
-        
         // 버튼 클릭 이벤트
         btnAlarm.addActionListener((e)->{
             world.t1.interrupt(); 
