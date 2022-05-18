@@ -96,7 +96,7 @@ public class App extends JFrame{
             new Index();
             setVisible(false);
         });
-
+        
         setLocation(730,250);
         setTitle("Watch");
         setSize(500,500);
