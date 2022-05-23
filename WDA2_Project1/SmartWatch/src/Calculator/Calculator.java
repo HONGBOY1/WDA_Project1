@@ -6,12 +6,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Stack;
 
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import java.awt.BorderLayout;
+
+import Index.Index;
+
 
 
 public class Calculator {
@@ -29,19 +30,18 @@ public class Calculator {
 	private void prepareFrame() {
 
         JFrame frame = new JFrame("Calculator");
-/*
+
+	
         JPanel Prebtn = new JPanel(); // 이전 버튼을 위한 패널
+		Previous = new JButton("<");
         Prebtn.add(Previous);
-        JPanel pnlNorth = new JPanel(new BorderLayout());
-        pnlNorth.add(Prebtn, BorderLayout.NORTH);
-        JPanel pnlMain = new JPanel(new BorderLayout());
-        pnlMain.add(pnlNorth, BorderLayout.NORTH);
-        frame.add(pnlMain);
+		Previous.setBounds(0, 0, 50, 30);  //시계
 
         Previous.addActionListener((e)->{
+			new Index();
             frame.setVisible(false);
         });
-*/
+
 		Font f1 = new Font("Arial", Font.PLAIN, 22);
 		stack.push("0");
 		
@@ -61,6 +61,8 @@ public class Calculator {
 		label.setFont(new Font("Arial", Font.PLAIN, 40));
 		label.setForeground(new Color(255, 255, 255));
 		if(label.getText().length()>10) label.setFont(f1);
+
+		panel.add(Previous);
 
 		frame.add(label);
 		frame.add(panel);
@@ -269,5 +271,4 @@ public class Calculator {
 		pow = 1;
 
 	}
-
 }

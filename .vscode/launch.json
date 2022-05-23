@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
             "name": "Launch Calculator",
             "request": "launch",
             "mainClass": "Calculator.Calculator",
@@ -13,15 +19,9 @@
         },
         {
             "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
             "name": "Launch Index",
             "request": "launch",
-            "mainClass": "Index",
+            "mainClass": "Index.Index",
             "projectName": "WDA_Project1_79c152c2"
         }
     ]
