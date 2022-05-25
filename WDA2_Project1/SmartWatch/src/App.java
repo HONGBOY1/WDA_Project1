@@ -9,9 +9,9 @@ import WorldTime.WorldTime;
 import Timer.Timer;
 import StopWatch.StopWatch;
 import Alarm.Alarm;
-import javafx.*;
-import javafx.scene.paint.Color;
-import javafx.stage.Window;
+//import javafx.*;
+//import javafx.scene.paint.Color;
+//import javafx.stage.Window;
 
 import java.awt.Font;
 
@@ -30,7 +30,7 @@ public class App extends JFrame{
 
     Font font;
 
-    Color color = (Color.WHITE);
+    //Color color = (Color.WHITE);
 
     public void Timer() {
 
