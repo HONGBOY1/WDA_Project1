@@ -1,7 +1,9 @@
+package App;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import java.awt.Color;
 
 import java.awt.BorderLayout;
 
@@ -9,11 +11,17 @@ import WorldTime.WorldTime;
 import Timer.Timer;
 import StopWatch.StopWatch;
 import Alarm.Alarm;
+<<<<<<< HEAD:WDA2_Project1/SmartWatch/src/App.java
 //import javafx.*;
 //import javafx.scene.paint.Color;
 //import javafx.stage.Window;
+=======
+import Index.Index;
+import javafx.scene.layout.Background;
+>>>>>>> 68979468deccbd86204837811d948df38c96d527:WDA2_Project1/SmartWatch/src/App/App.java
 
 import java.awt.Font;
+
 
 
 public class App extends JFrame{
@@ -76,10 +84,8 @@ public class App extends JFrame{
         pnlMain.add(pnlSouth, BorderLayout.SOUTH);
         pnlMain.add(pnlNorth, BorderLayout.NORTH);
         add(pnlMain);
-
-        
-        
-        
+        pnlMain.setBackground(new Color(0,0,0));
+        world.lblCenter.setForeground(new Color(255,255,255));
         // 버튼 클릭 이벤트
         btnAlarm.addActionListener((e)->{
             world.t1.interrupt(); 
@@ -100,7 +106,7 @@ public class App extends JFrame{
             new Index();
             setVisible(false);
         });
-
+  
         setLocation(730,250);
         setTitle("Watch");
         setSize(500,500);
