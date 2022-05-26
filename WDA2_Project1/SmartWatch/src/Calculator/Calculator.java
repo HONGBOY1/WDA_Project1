@@ -28,10 +28,9 @@ public class Calculator {
 	}
 
 	private void prepareFrame() {
-
+		
         JFrame frame = new JFrame("Calculator");
-
-	
+		frame.setVisible(true);
         JPanel Prebtn = new JPanel(); // 이전 버튼을 위한 패널
 		Previous = new JButton("<");
         Prebtn.add(Previous);
