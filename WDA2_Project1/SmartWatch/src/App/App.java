@@ -32,7 +32,7 @@ public class App extends JFrame{
 
     Font font;
 
-    Color color = (Color.WHITE);
+    //Color color = (Color.WHITE);
 
     public void Timer() {
 

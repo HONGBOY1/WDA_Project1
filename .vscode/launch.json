@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Index",
+            "request": "launch",
+            "mainClass": "Index.Index",
+            "projectName": "WDA_Project1_SmartWatch_dcecec32"
+        },
+        {
+            "type": "java",
+            "name": "Launch Index",
+            "request": "launch",
+            "mainClass": "Index.Index",
+            "projectName": "WDA_Project1_SmartWatch_63e4b674"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
