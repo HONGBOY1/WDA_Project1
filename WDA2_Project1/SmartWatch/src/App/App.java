@@ -11,14 +11,9 @@ import WorldTime.WorldTime;
 import Timer.Timer;
 import StopWatch.StopWatch;
 import Alarm.Alarm;
-<<<<<<< HEAD:WDA2_Project1/SmartWatch/src/App.java
 //import javafx.*;
 //import javafx.scene.paint.Color;
 //import javafx.stage.Window;
-=======
-import Index.Index;
-import javafx.scene.layout.Background;
->>>>>>> 68979468deccbd86204837811d948df38c96d527:WDA2_Project1/SmartWatch/src/App/App.java
 
 import java.awt.Font;
 
