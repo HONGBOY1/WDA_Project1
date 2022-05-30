@@ -4,7 +4,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import java.awt.Color;
-
+import java.util.TimeZone;
+import java.util.Calendar;
 import java.awt.BorderLayout;
 
 import WorldTime.WorldTime;
@@ -25,6 +26,12 @@ public class App extends JFrame{
     private JButton btnStopWatch;
     private JButton btnTimer;
     private JButton btnWorldTime;
+    private JLabel lblNorth;
+    private JLabel lblCenter;
+    private JLabel lblSouth;
+
+
+
     public JButton Previous;   // 이전 버튼
 
     public Thread t1;
@@ -48,6 +55,7 @@ public class App extends JFrame{
         // 실행과 동시에 실행
         world.aa=true;
         world.ThreadTime(); 
+       
 
         world.lblCenter = new JLabel("",JLabel.CENTER);
         world.lblCenter.setFont(font);
@@ -92,8 +100,9 @@ public class App extends JFrame{
             
         });
         btnWorldTime.addActionListener((e)->{
-            world.aa=true;
-            world.ThreadTime();
+                  
+                   world.aa=true;
+                   world.ThreadTime();
         });
 
         // 이전 버튼 
@@ -101,6 +110,8 @@ public class App extends JFrame{
             new Index();
             setVisible(false);
         });
+
+     
   
         setLocation(730,250);
         setTitle("Watch");
