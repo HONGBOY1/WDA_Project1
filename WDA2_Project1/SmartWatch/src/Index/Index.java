@@ -14,6 +14,7 @@ import java.awt.Toolkit;
 import java.awt.Dimension;
 
 import Calculator.Calculator;
+import Map.Map;
 
 public class Index extends JFrame {
     private JButton Calendar;  // 달력 버튼
@@ -87,7 +88,8 @@ public class Index extends JFrame {
             f.setVisible(false); 
         });
         Map.addActionListener((e)->{
-            
+            new Map();
+            f.setVisible(false);
         });
         Time.addActionListener((e)->{
             new App();

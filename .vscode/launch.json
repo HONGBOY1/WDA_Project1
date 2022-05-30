@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Map",
+            "request": "launch",
+            "mainClass": "Map.Map",
+            "projectName": "WDA_Project1_79c152c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Timer",
+            "request": "launch",
+            "mainClass": "Timer.Timer",
+            "projectName": "WDA_Project1_79c152c2"
+        },
+        {
+            "type": "java",
             "name": "Launch Index",
             "request": "launch",
             "mainClass": "Index.Index",

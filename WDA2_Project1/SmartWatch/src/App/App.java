@@ -89,6 +89,7 @@ public class App extends JFrame{
         });
         btnTimer.addActionListener((e)->{
             world.t1.interrupt();
+            
         });
         btnWorldTime.addActionListener((e)->{
             world.aa=true;
