@@ -10,6 +10,9 @@ import javax.swing.JTextField;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 import Index.Index;
 
 public class Map extends JFrame{
@@ -69,7 +72,9 @@ public class Map extends JFrame{
         setResizable(false);
         setTitle("Map");
         setVisible(true);
-        setLocation(800, 350);
+
+   
+         setLocation(700,250);
 
         panel.add(textField);
         panel.add(button);
