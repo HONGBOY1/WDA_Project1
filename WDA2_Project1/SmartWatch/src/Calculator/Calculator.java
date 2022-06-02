@@ -51,7 +51,7 @@ public class Calculator {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		JPanel panel = new JPanel();
-		panel.setBackground(new Color(192,192,192));
+		panel.setBackground(new Color(38,39,38));
 		panel.setLayout(null);
 
 		JLabel label = new JLabel("0");
@@ -67,19 +67,22 @@ public class Calculator {
 		frame.add(panel);
 
 		JButton[] btn = new JButton[19];
+	
+		
 
 		for(int i = 0 ; i<10; i++) {
 
 			btn[i] = new JButton(String.valueOf(i));
+			btn[i].setBackground(new Color(92,92,92));
 			if(i == 0) {
 				btn[0].setBounds(0, 300, 120, 50);
 				btn[0].setFont(f1);
-
+				
 			}
 			else
 				btn[i].setBounds(0+60*((i-1)%3), 350-50*((i-1)/3+2), 60, 50);
 			btn[i].setFont(f1);
-
+			btn[i].setForeground(new Color(255, 255, 255));
 			panel.add(btn[i]);
 
 			btn[i].addActionListener(new ActionListener(){
@@ -138,14 +141,20 @@ public class Calculator {
 			if(i == 15) {
 				btn[15].setBounds(120, 300, 60, 50);
 				panel.add(btn[15]);
+				btn[i].setBackground(new Color(92,92,92));
 			}
 			else if(i > 15) {
 				btn[i].setBounds(60*(i-16), 100, 60, 50);
+				btn[i].setBackground(new Color(59,60,60));
 			}
-			else
+			else{
 				btn[i].setBounds(180, 100+50*(i%10), 60, 50);
+				btn[i].setBackground(new Color(242,163,60));
+			}
 			btn[i].setFont(f1);
+			btn[i].setForeground(new Color(255, 255, 255));
 			panel.add(btn[i]);
+			
 			btn[i].addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent e) {
 					JButton myButton = (JButton)e.getSource();
