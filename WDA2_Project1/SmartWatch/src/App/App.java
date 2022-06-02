@@ -39,7 +39,7 @@ public class App extends JFrame{
 
     Font font;
 
-    //Color color = (Color.WHITE);
+    Color color = (Color.WHITE);
 
     public void Timer() {
 
@@ -99,7 +99,7 @@ public class App extends JFrame{
             world.t1.interrupt();
         });
         btnWorldTime.addActionListener((e)->{
-                  
+            
                    world.aa=true;
                    world.ThreadTime();
         });

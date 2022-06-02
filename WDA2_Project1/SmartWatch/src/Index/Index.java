@@ -43,7 +43,7 @@ public class Index extends JFrame {
         * 이미지 추가 
         */
         JLabel imgLbl = new JLabel();
-        ImageIcon bsImg = new ImageIcon("C:/WDA2_Project/WDA_Project1/WDA2_Project1/SmartWatch/src/IMG/watch.png");
+        ImageIcon bsImg = new ImageIcon("C:/Users/heiio/OneDrive/문서/GitHub/WDA_Project1_SmartWatch/WDA2_Project1/SmartWatch/src/IMG/watch.png");
         //ImageIcon bsImg = new ImageIcon(getClass().getResource("watch.png"));
         
         imgLbl.setIcon(bsImg);
