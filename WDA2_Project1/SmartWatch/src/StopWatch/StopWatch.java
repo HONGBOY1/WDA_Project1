@@ -34,20 +34,20 @@ package StopWatch;
        
         private JLabel label = new JLabel(INITIAL_LABEL_TEXT);  
        
-        private JButton startPauseButton = new JButton("  ");  
+        private JButton startPauseButton = new JButton("시작");  
        
-        private JButton resetButton = new JButton("  ");  
+        private JButton resetButton = new JButton("리셋");  
        
         private ActionListener startPauseButtonListener = new ActionListener() {  
             public void actionPerformed(ActionEvent e) {  
                 if (thread.stopped) {  
                     pauseCount += (System.currentTimeMillis() - pauseStart);  
                     thread.stopped = false;  
-                    startPauseButton.setText("  ");  
+                    startPauseButton.setText("정지");  
                 } else {  
                     pauseStart = System.currentTimeMillis();  
                     thread.stopped = true;  
-                    startPauseButton.setText("  ");  
+                    startPauseButton.setText("시작");  
                 }  
             }  
         };  
@@ -62,7 +62,7 @@ package StopWatch;
             }  
         };  
        
-        public Stop(String title) throws HeadlessException {  
+        public StopWatch(String title) throws HeadlessException {  
             super(title);  
             setDefaultCloseOperation(EXIT_ON_CLOSE);  
             setLocation(300, 300);  
@@ -108,7 +108,7 @@ package StopWatch;
                 e.printStackTrace();  
             }  
        
-            Timer frame = new Timer("   ");  
+            StopWatch frame = new StopWatch("   ");  
             frame.pack();  
             frame.setVisible(true);  
         }  

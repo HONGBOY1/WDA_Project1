@@ -62,7 +62,7 @@ public class Timer extends JFrame {
     };  
    
     public Timer(String title) throws HeadlessException {  
-        super(title);  
+        super(title);  /*
         setDefaultCloseOperation(EXIT_ON_CLOSE);  
         setLocation(300, 300);  
         setResizable(false);  
@@ -73,7 +73,7 @@ public class Timer extends JFrame {
    
         startPauseButton.addActionListener(startPauseButtonListener);  
         resetButton.addActionListener(resetButtonListener);  
-   
+   */
         thread.start(); //             
     }  
    
