@@ -14,15 +14,15 @@ import java.awt.Toolkit;
 import java.awt.Dimension;
 
 import Calculator.Calculator;
+import Map.Map;
+import Calendar.Calendar;
 
 public class Index extends JFrame {
     private JButton Calendar;  // 달력 버튼
     private JButton Calculator;// 계산기 버튼
     private JButton Map;       // 맵 버튼
     private JButton Time;      // 시계 버튼
-    public JButton Next;       // 다음 버튼
     
-   
     JFrame f = new JFrame("제목");
 
     public Index(){
@@ -80,14 +80,16 @@ public class Index extends JFrame {
         * 이동하는 이벤트 버튼 
         */
         Calendar.addActionListener((e)->{
-        
+            new Calendar();
+            f.setVisible(false);
         });
         Calculator.addActionListener((e)->{
             new Calculator();
             f.setVisible(false); 
         });
         Map.addActionListener((e)->{
-            
+            new Map();
+            f.setVisible(false);
         });
         Time.addActionListener((e)->{
             new App();

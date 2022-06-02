@@ -2,9 +2,11 @@ package WorldTime;
 
 import java.util.Calendar;
 import java.util.TimeZone;
+import java.awt.image.BufferedImage;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -13,7 +15,11 @@ import javax.swing.JButton;
 
 public class WorldTime extends JFrame{
 
+    ImageIcon icon;
 
+  
+       
+    
     public boolean aa;
     public boolean bb;
     public Thread t1;
@@ -21,23 +27,19 @@ public class WorldTime extends JFrame{
     public JLabel lblNorth;
     public Object now;
 
-    
 
-
-   
-    
-    
 
 
 
     public void ThreadTime() {
-
-        JLabel imgLbl = new JLabel();
-        ImageIcon bsImg = new ImageIcon("C:/Users/heiio/OneDrive/문서/GitHub/WDA_Project1_SmartWatch/WDA2_Project1/SmartWatch/src/IMG/WorldMap.png");
-
         
 
+     
+
         t1 = new Thread() {
+            
+          
+            
            public void run() {
                
                while(aa){
@@ -73,6 +75,18 @@ public class WorldTime extends JFrame{
     }
 
 public WorldTime(){
+      
+     icon = new ImageIcon(C:/Users/heiio/OneDrive/문서/GitHub/WDA_Project1_SmartWatch/WDA2_Project1/SmartWatch/src/IMG/WorldMap.png")
+
+
+
+
+
+
+
+
+
+
     ThreadTime();
 
     JFrame f1 = new JFrame();
