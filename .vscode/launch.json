@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StopWatch",
+            "request": "launch",
+            "mainClass": "StopWatch.StopWatch",
+            "projectName": "WDA_Project1_SmartWatch_e444b8c8"
+        },
+        {
+            "type": "java",
             "name": "Launch Index",
             "request": "launch",
             "mainClass": "Index.Index",
