@@ -23,6 +23,7 @@ public class Map extends JFrame{
 
     private GoogleAPI googleAPI = new GoogleAPI();
     private JLabel googleMap = new JLabel(); 
+    boolean isDragged; 
 
     public class Event implements MouseListener{
 
@@ -55,6 +56,12 @@ public class Map extends JFrame{
             // TODO Auto-generated method stub
             
         }
+        public void mouseDragged(MouseEvent me){ //드래그 모드인 경우에만 사각형 이동시킴 
+            if(isDragged){
+             
+                } 
+            repaint();
+        } 
 
     }
 

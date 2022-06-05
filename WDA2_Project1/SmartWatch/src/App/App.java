@@ -100,15 +100,16 @@ public class App extends JFrame{
             
         });
         btnWorldTime.addActionListener((e)->{
-                  
-                   world.aa=true;
-                   world.ThreadTime();
+            world.aa=true;
+            world.ThreadTime();
         });
 
         // 이전 버튼 
         Previous.addActionListener((e)->{
             new Index();
+            world.f1.setVisible(false);
             setVisible(false);
+          
         });
 
      

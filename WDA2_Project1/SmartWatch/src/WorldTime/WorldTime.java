@@ -9,12 +9,14 @@ import javax.swing.JButton;
 
 
 public class WorldTime extends JFrame{
+    public boolean oftf;
     public boolean aa;
     public boolean bb;
     public Thread t1;
+    public Thread t2;
     public JLabel lblCenter;
-   public Object now;
-
+    public Object now;
+    public JFrame f1 = new JFrame();
    
 
     public void ThreadTime() {
@@ -37,7 +39,7 @@ public class WorldTime extends JFrame{
                    now.append("초");
                   
                    lblCenter.setText(now.toString());
-                   t1.interrupt();
+
                               
                try {
                     Thread.sleep(1000); 
@@ -53,10 +55,47 @@ public class WorldTime extends JFrame{
 
     }
 
+    public void RondonTime() {
+        t2 = new Thread() {
+           public void run() {
+               
+               while(bb){
+
+                    Calendar cal = Calendar.getInstance();
+                    TimeZone zone = TimeZone.getTimeZone("Europe/London");
+                    cal.setTimeZone(zone);
+                StringBuffer now = new StringBuffer();
+                   
+                   now.append(cal.get(Calendar.HOUR_OF_DAY));
+                   now.append("시");
+                   now.append(cal.get(Calendar.MINUTE));                    
+                   now.append("분");
+                   now.append(cal.get(Calendar.SECOND));
+                   now.append("초");
+                  
+                   lblCenter.setText(now.toString());
+                              
+               try {
+                    Thread.sleep(1000); 
+               } catch(InterruptedException ie) {
+                   ie.printStackTrace();
+                   bb = false;
+               }
+           }
+               
+           }
+       };
+       t2.start();
+
+    }
+
+   
+
+
 public WorldTime(){
     ThreadTime();
 
-    JFrame f1 = new JFrame();
+
     JButton btn1 = new JButton("런던");
     btn1.setBounds(30,30,100,40);
 
@@ -69,28 +108,21 @@ public WorldTime(){
     JButton btn4 = new JButton("베를린");
     btn4.setBounds(420,30,100,40);
 
+    oftf=true;
+
     f1.add(btn1);
     f1.add(btn2);
     f1.add(btn3);
     f1.add(btn4);
     f1.setSize(600,400);
     f1.setLayout(null);
-    f1.setVisible(true);
+    f1.setVisible(oftf);
 
     btn1.addActionListener(event ->{
-     Calendar cal = Calendar.getInstance();
-     TimeZone zone = TimeZone.getTimeZone("Europe/London");
-     cal.setTimeZone(zone);
-     StringBuffer now = new StringBuffer();
-     
-     now.append(cal.get(Calendar.HOUR_OF_DAY));
-     now.append("시");
-     now.append(cal.get(Calendar.MINUTE));                    
-     now.append("분");
-     now.append(cal.get(Calendar.SECOND));
-     now.append("초");
-    
-     lblCenter.setText(now.toString());
+        bb=true;
+        aa=false;
+        RondonTime();
+      
     });
 
     btn2.addActionListener(event ->{
