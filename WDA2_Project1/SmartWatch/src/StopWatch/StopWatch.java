@@ -127,9 +127,9 @@ package StopWatch;
                 e.printStackTrace();  
             }  
     
-            StopWatch frame = new StopWatch("스톱워치");  
-            frame.pack();  
-            frame.setVisible(true);
+            StopWatch fra = new StopWatch("스톱워치");  
+            fra.pack();  
+            fra.setVisible(true);
       
         }  
        

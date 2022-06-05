@@ -5,6 +5,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 
+import java.awt.EventQueue;
+
 import java.awt.Color;
 import java.util.TimeZone;
 import java.util.Calendar;
@@ -90,9 +92,21 @@ public class App extends JFrame{
         pnlMain.setBackground(new Color(0,0,0));
         world.lblCenter.setForeground(new Color(255,255,255));
         // 버튼 클릭 이벤트
-        StopWatch frame = new StopWatch("   ");  
+        StopWatch fra = new StopWatch("   ");  
         btnAlarm.addActionListener((e)->{
-      
+            EventQueue.invokeLater(new Runnable() {
+                public void run() {
+                    try {
+                        AlarmClock window = new AlarmClock();
+                        window.frame.setVisible(true);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            setVisible(false);
+            world.f1.setVisible(false);
+            fra.setVisible(false); 
         });
         btnStopWatch.addActionListener((e)->{
             try {  
@@ -100,9 +114,8 @@ public class App extends JFrame{
             } catch (Exception ee) {  
                 ee.printStackTrace();  
             }  
-       
-            frame.pack();  
-            frame.setVisible(true);
+            fra.pack();  
+            fra.setVisible(true);
             setVisible(false);
             world.f1.setVisible(false);
 
@@ -121,7 +134,7 @@ public class App extends JFrame{
             new Index();
             world.f1.setVisible(false);
             setVisible(false);
-            frame.setVisible(false); 
+            fra.setVisible(false); 
 
         });
 

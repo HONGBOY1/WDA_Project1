@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AlarmClock",
+            "request": "launch",
+            "mainClass": "AlarmClock.AlarmClock",
+            "projectName": "WDA_Project1_79c152c2"
+        },
+        {
+            "type": "java",
             "name": "Launch StopWatch",
             "request": "launch",
             "mainClass": "StopWatch.StopWatch",
@@ -13,7 +20,6 @@
         },
         {
             "type": "java",
-
             "name": "Launch CountMain",
             "request": "launch",
             "mainClass": "Timer.CountMain",
@@ -21,7 +27,6 @@
         },
         {
             "type": "java",
-            "name": "Launch StopWatch",
             "name": "Launch TimeZonelds",
             "request": "launch",
             "mainClass": "WorldTime.TimeZonelds",

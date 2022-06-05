@@ -5,6 +5,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 import jaco.mp3.player.MP3Player;
 
@@ -23,11 +24,13 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.ActionEvent;
+import java.awt.BorderLayout;
 
+import App.App;
 
 public class AlarmClock {
 
-	private JFrame frame;
+	public JFrame frame;
 	private JLabel lbl_CD, lbl_CT, lbl_AT;
 	private static JTextField txt_hrs, txt_mins, txt_secs, txt_ampm;
 	private JButton btn_SA, btn_ST;
@@ -68,24 +71,30 @@ public class AlarmClock {
 	/**
 	 * Initialize the contents of the frame.
 	 */
+	
+    public JButton Previous;   // 이전 버튼
+
 	private void initialize() {
+		
+	    
+
 		frame = new JFrame("Alarm Clock");
 		frame.setBounds(100, 100, 352, 315);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lbl1 = new JLabel("Current Date    :");
-		lbl1.setFont(new Font("Microsoft Sans Serif", Font.PLAIN, 14));
+		JLabel lbl1 = new JLabel("현재 시간    	:");
+		lbl1.setFont(new Font("Sherif", Font.PLAIN, 14));
 		lbl1.setBounds(25, 23, 117, 14);
 		frame.getContentPane().add(lbl1);
 		
-		JLabel lbl2 = new JLabel("Current Time    :");
-		lbl2.setFont(new Font("Microsoft Sans Serif", Font.PLAIN, 14));
+		JLabel lbl2 = new JLabel("현재 시간    	:");
+		lbl2.setFont(new Font("Sherif", Font.PLAIN, 14));
 		lbl2.setBounds(25, 52, 117, 17);
 		frame.getContentPane().add(lbl2);
 		
-		JLabel lbl3 = new JLabel("Alarm Time       :");
-		lbl3.setFont(new Font("Microsoft Sans Serif", Font.PLAIN, 14));
+		JLabel lbl3 = new JLabel("알람 시간       :");
+		lbl3.setFont(new Font("Sherif", Font.PLAIN, 14));
 		lbl3.setBounds(25, 80, 117, 17);
 		frame.getContentPane().add(lbl3);
 		
@@ -108,8 +117,8 @@ public class AlarmClock {
 		separator.setBounds(25, 108, 287, 2);
 		frame.getContentPane().add(separator);
 		
-		JLabel lbl4 = new JLabel("Enter Time        :");
-		lbl4.setFont(new Font("Microsoft Sans Serif", Font.PLAIN, 14));
+		JLabel lbl4 = new JLabel("입력 시간        :");
+		lbl4.setFont(new Font("Sherif", Font.PLAIN, 14));
 		lbl4.setBounds(25, 131, 117, 14);
 		frame.getContentPane().add(lbl4);
 
@@ -189,8 +198,9 @@ public class AlarmClock {
 		txt_secs.setColumns(10);
 		txt_secs.setBounds(210, 125, 30, 20);
 		frame.getContentPane().add(txt_secs);
-		
+		frame.setLocation(700,200);
 		txt_ampm = new JTextField();
+
 		txt_ampm.addKeyListener(new KeyAdapter() {
 			public void keyPressed(KeyEvent e) {
 				String ampm = txt_ampm.getText().toUpperCase().trim();
@@ -209,25 +219,35 @@ public class AlarmClock {
 		txt_ampm.setBounds(242, 125, 30, 20);
 		frame.getContentPane().add(txt_ampm);
 		
-		JLabel lblHrs = new JLabel("Hr");
+		JLabel lblHrs = new JLabel("H");
 		lblHrs.setHorizontalAlignment(SwingConstants.CENTER);
 		lblHrs.setFont(new Font("Microsoft Sans Serif", Font.PLAIN, 14));
 		lblHrs.setBounds(146, 146, 30, 17);
 		frame.getContentPane().add(lblHrs);
 		
-		JLabel lblMins = new JLabel("Min");
+		JLabel lblMins = new JLabel("M");
 		lblMins.setHorizontalAlignment(SwingConstants.CENTER);
 		lblMins.setFont(new Font("Microsoft Sans Serif", Font.PLAIN, 14));
 		lblMins.setBounds(178, 146, 30, 17);
 		frame.getContentPane().add(lblMins);
 		
-		JLabel lblSecs = new JLabel("Sec");
+		JLabel lblSecs = new JLabel("S");
 		lblSecs.setHorizontalAlignment(SwingConstants.CENTER);
 		lblSecs.setFont(new Font("Microsoft Sans Serif", Font.PLAIN, 14));
 		lblSecs.setBounds(210, 146, 30, 17);
 		frame.getContentPane().add(lblSecs);
 		
-		btn_ST = new JButton(" SET TIME");
+
+		Previous = new JButton("이전");
+		Previous.setBounds(25, 245, 65, 25);
+		frame.getContentPane().add(Previous);
+
+		Previous.addActionListener((e)->{
+			new App();
+			frame.setVisible(false);
+        });
+
+		btn_ST = new JButton("설정");
 		btn_ST.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			   setTime();
@@ -240,11 +260,11 @@ public class AlarmClock {
 			    }	    
 			}
 		});
-		btn_ST.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		btn_ST.setFont(new Font("궁서체", Font.PLAIN, 11));
 		btn_ST.setBounds(25, 174, 143, 25);
 		frame.getContentPane().add(btn_ST);
 		
-		btn_SA = new JButton("STOP ALARM");
+		btn_SA = new JButton("중지");
 		btn_SA.setEnabled(false);
 		btn_SA.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -258,10 +278,10 @@ public class AlarmClock {
 			    }	    
 			}
 		});
-		btn_SA.setFont(new Font("Segoe UI", Font.PLAIN, 11));
+		btn_SA.setFont(new Font("궁서체", Font.PLAIN, 11));
 		btn_SA.setBounds(169, 174, 143, 25);
 		frame.getContentPane().add(btn_SA);
-
+		
 		clock = new Thread() 
 		{
 			public void run()

@@ -76,5 +76,4 @@ public class CountMain extends Frame implements TextListener, ActionListener{
 			}
 		}
 	}
-
 }
