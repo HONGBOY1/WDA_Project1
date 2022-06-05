@@ -16,10 +16,14 @@ import Index.Index;
 
 
 import java.awt.Font;
+import javax.swing.ImageIcon;
 
 
 
 public class App extends JFrame{
+
+
+    ImageIcon icon = new ImageIcon("WorldMap");
 
     // 이동하는 버튼 변수
     private JButton btnAlarm;
@@ -46,7 +50,10 @@ public class App extends JFrame{
    }
 
     public App() {  // App  실행 함수
-    
+
+        
+ 
+
         
        font = new Font("맑은 고딕",Font.BOLD,35); //폰트 기본값
 
@@ -100,7 +107,10 @@ public class App extends JFrame{
             
         });
         btnWorldTime.addActionListener((e)->{
-            
+
+                  ImageIcon WorldMap = new ImageIcon("WorldMap.png");
+                  
+
                    world.aa=true;
                    world.ThreadTime();
         });
@@ -110,6 +120,8 @@ public class App extends JFrame{
             new Index();
             setVisible(false);
         });
+
+     
 
      
   

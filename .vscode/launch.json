@@ -6,6 +6,7 @@
     "configurations": [
         {
             "type": "java",
+<<<<<<< HEAD
             "name": "Launch CountMain",
             "request": "launch",
             "mainClass": "Timer.CountMain",
@@ -14,9 +15,19 @@
         {
             "type": "java",
             "name": "Launch StopWatch",
+=======
+            "name": "Launch TimeZonelds",
+>>>>>>> fa8ec24df55ea625b4345fb0cb306a2376dba8d3
             "request": "launch",
-            "mainClass": "StopWatch.StopWatch",
-            "projectName": "WDA_Project1_SmartWatch_e444b8c8"
+            "mainClass": "WorldTime.TimeZonelds",
+            "projectName": "WDA_Project1_SmartWatch_dcecec32"
+        },
+        {
+            "type": "java",
+            "name": "Launch Timer",
+            "request": "launch",
+            "mainClass": "Timer.Timer",
+            "projectName": "WDA_Project1_SmartWatch_dcecec32"
         },
         {
             "type": "java",
