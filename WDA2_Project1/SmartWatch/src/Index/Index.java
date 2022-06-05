@@ -42,7 +42,11 @@ public class Index extends JFrame {
        
         JLabel imgLbl = new JLabel();
         ImageIcon bsImg = new ImageIcon(getClass().getResource("../IMG/watch.png"));
+<<<<<<< HEAD
+        //ImageIcon bsImg = new ImageIcon(getClass().getResource("watch.png"));
+=======
         
+>>>>>>> fa8ec24df55ea625b4345fb0cb306a2376dba8d3
         
         imgLbl.setIcon(bsImg);
         imgLbl.setBounds(0, 250, 100, 100);
