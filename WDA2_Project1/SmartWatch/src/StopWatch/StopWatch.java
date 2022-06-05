@@ -7,12 +7,12 @@ package StopWatch;
     import java.awt.Font;  
     import java.awt.event.ActionListener;  
     import java.awt.event.ActionEvent;  
-       
+    import App.App;
     /** 
      *     
      */  
     public class StopWatch extends JFrame {  
-       
+     
         /**
          * 
          */
@@ -38,6 +38,10 @@ package StopWatch;
        
         private JButton resetButton = new JButton("리셋");  
        
+        public JButton Previous = new JButton("이전");
+       
+        
+
         private ActionListener startPauseButtonListener = new ActionListener() {  
             public void actionPerformed(ActionEvent e) {  
                 if (thread.stopped) {  
@@ -60,12 +64,14 @@ package StopWatch;
                 label.setText(INITIAL_LABEL_TEXT);  
                 startPauseButton.setText("시작");  
             }  
+
+           
         };  
        
         public StopWatch(String title) throws HeadlessException {  
             super(title);  
             setDefaultCloseOperation(EXIT_ON_CLOSE);  
-            setLocation(300, 300);  
+            setLocation(730, 280);  
             setResizable(false);  
        
             setupBorder();  
@@ -75,7 +81,12 @@ package StopWatch;
             startPauseButton.addActionListener(startPauseButtonListener);  
             resetButton.addActionListener(resetButtonListener);  
        
-            thread.start(); //             
+            thread.start(); // 
+            
+            Previous.addActionListener((e)->{
+                setVisible(false);
+                new App();
+            });
         }  
        
         //            
@@ -90,7 +101,14 @@ package StopWatch;
             JPanel panel = new JPanel(new FlowLayout());  
             panel.add(startPauseButton);  
             panel.add(resetButton);  
-            add(panel, BorderLayout.SOUTH);  
+            add(panel, BorderLayout.SOUTH); 
+
+            JPanel Prebtn = new JPanel(); // 이전 버튼을 위한 패널
+            Prebtn.add(Previous);
+            add(Prebtn, BorderLayout.NORTH); 
+
+            
+          
         }  
        
         //       
@@ -108,9 +126,10 @@ package StopWatch;
                 e.printStackTrace();  
             }  
        
-            StopWatch frame = new StopWatch("   ");  
+           StopWatch frame = new StopWatch("   "); 
             frame.pack();  
-            frame.setVisible(true);  
+            frame.setVisible(true);
+      
         }  
        
         private class CountingThread extends Thread {  

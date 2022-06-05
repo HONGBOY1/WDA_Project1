@@ -30,7 +30,7 @@ class Swing28    extends JFrame implements ActionListener{
        JButton buttonAfter = new JButton("After");
 
        JButton Previous = new JButton("이전");   // 이전 버튼
-
+      
        JLabel label = new JLabel();
 
        JButton[] buttons = new JButton[49]; // 7*7 = 49

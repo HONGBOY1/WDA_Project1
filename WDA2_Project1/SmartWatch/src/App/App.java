@@ -3,6 +3,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.UIManager;
+
 import java.awt.Color;
 import java.util.TimeZone;
 import java.util.Calendar;
@@ -16,10 +18,14 @@ import Index.Index;
 
 
 import java.awt.Font;
+import javax.swing.ImageIcon;
 
 
 
 public class App extends JFrame{
+
+
+    ImageIcon icon = new ImageIcon("WorldMap");
 
     // 이동하는 버튼 변수
     private JButton btnAlarm;
@@ -46,7 +52,8 @@ public class App extends JFrame{
    }
 
     public App() {  // App  실행 함수
-    
+
+
         
        font = new Font("맑은 고딕",Font.BOLD,35); //폰트 기본값
 
@@ -89,17 +96,30 @@ public class App extends JFrame{
         pnlMain.setBackground(new Color(0,0,0));
         world.lblCenter.setForeground(new Color(255,255,255));
         // 버튼 클릭 이벤트
+        StopWatch frame = new StopWatch("   ");  
         btnAlarm.addActionListener((e)->{
-            world.t1.interrupt(); 
+      
         });
         btnStopWatch.addActionListener((e)->{
-            world.t1.interrupt();
+            try {  
+                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());  
+            } catch (Exception ee) {  
+                ee.printStackTrace();  
+            }  
+       
+            frame.pack();  
+            frame.setVisible(true);
+            setVisible(false);
+            world.f1.setVisible(false);
+
         });
         btnTimer.addActionListener((e)->{
-            world.t1.interrupt();
+            
             
         });
         btnWorldTime.addActionListener((e)->{
+            ImageIcon WorldMap = new ImageIcon("WorldMap.png");
+            
             world.aa=true;
             world.ThreadTime();
         });
@@ -109,10 +129,13 @@ public class App extends JFrame{
             new Index();
             world.f1.setVisible(false);
             setVisible(false);
-          
+            frame.setVisible(false); 
+
         });
 
      
+
+  
         setLocation(730,250);
         setTitle("Watch");
         setSize(500,500);

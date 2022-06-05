@@ -39,9 +39,7 @@ public class Index extends JFrame {
         JPanel p5 = new JPanel();
 
       
-        /**
-        * 이미지 추가 
-        */
+       
         JLabel imgLbl = new JLabel();
        
         ImageIcon bsImg = new ImageIcon(getClass().getResource("../IMG/watch.png"));
