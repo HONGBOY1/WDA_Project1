@@ -58,7 +58,7 @@ public class Calculator {
 		label.setBounds(10, 0, 220, 100);
 		label.setHorizontalAlignment(JLabel.RIGHT);
 		label.setFont(new Font("Arial", Font.PLAIN, 40));
-		label.setForeground(new Color(255, 255, 255));
+		label.setForeground(new Color(255,255, 255));
 		if(label.getText().length()>10) label.setFont(f1);
 
 		panel.add(Previous);
@@ -67,6 +67,8 @@ public class Calculator {
 		frame.add(panel);
 
 		JButton[] btn = new JButton[19];
+	
+		
 
 		for(int i = 0 ; i<10; i++) {
 
@@ -74,12 +76,11 @@ public class Calculator {
 			if(i == 0) {
 				btn[0].setBounds(0, 300, 120, 50);
 				btn[0].setFont(f1);
-
+				
 			}
 			else
 				btn[i].setBounds(0+60*((i-1)%3), 350-50*((i-1)/3+2), 60, 50);
 			btn[i].setFont(f1);
-
 			panel.add(btn[i]);
 
 			btn[i].addActionListener(new ActionListener(){
@@ -141,11 +142,15 @@ public class Calculator {
 			}
 			else if(i > 15) {
 				btn[i].setBounds(60*(i-16), 100, 60, 50);
+			
 			}
-			else
+			else{
 				btn[i].setBounds(180, 100+50*(i%10), 60, 50);
+		
+			}
 			btn[i].setFont(f1);
 			panel.add(btn[i]);
+			
 			btn[i].addActionListener(new ActionListener(){
 				public void actionPerformed(ActionEvent e) {
 					JButton myButton = (JButton)e.getSource();

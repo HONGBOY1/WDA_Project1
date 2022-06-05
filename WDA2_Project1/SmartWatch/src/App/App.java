@@ -39,7 +39,7 @@ public class App extends JFrame{
 
     Font font;
 
-    //Color color = (Color.WHITE);
+    Color color = (Color.WHITE);
 
     public void Timer() {
 
@@ -113,7 +113,6 @@ public class App extends JFrame{
         });
 
      
-  
         setLocation(730,250);
         setTitle("Watch");
         setSize(500,500);
