@@ -31,7 +31,7 @@ public class Index extends JFrame {
         Calculator = new JButton("계산기");
         Map = new JButton("지도");
         Time = new JButton("시계");
-
+            
         JPanel p1 = new JPanel();
         JPanel p2 = new JPanel();
         JPanel p3 = new JPanel();
