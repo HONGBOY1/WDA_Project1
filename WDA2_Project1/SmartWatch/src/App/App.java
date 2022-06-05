@@ -13,9 +13,8 @@ import java.awt.BorderLayout;
 import WorldTime.WorldTime;
 import Timer.Timer;
 import StopWatch.StopWatch;
-import Alarm.Alarm;
+import AlarmClock.AlarmClock;
 import Index.Index;
-
 
 import java.awt.Font;
 import javax.swing.ImageIcon;
@@ -36,8 +35,6 @@ public class App extends JFrame{
     private JLabel lblCenter;
     private JLabel lblSouth;
 
-
-
     public JButton Previous;   // 이전 버튼
 
     public Thread t1;
@@ -52,10 +49,7 @@ public class App extends JFrame{
    }
 
     public App() {  // App  실행 함수
-
-
-        
-       font = new Font("맑은 고딕",Font.BOLD,35); //폰트 기본값
+       font = new Font("Sherif",Font.BOLD,35); //폰트 기본값
 
         WorldTime world = new WorldTime();   // 세계시간 메소드 불러 오기
         
@@ -114,12 +108,10 @@ public class App extends JFrame{
 
         });
         btnTimer.addActionListener((e)->{
-            
-            
+            world.t1.interrupt();
         });
         btnWorldTime.addActionListener((e)->{
             ImageIcon WorldMap = new ImageIcon("WorldMap.png");
-            
             world.aa=true;
             world.ThreadTime();
         });
@@ -133,9 +125,6 @@ public class App extends JFrame{
 
         });
 
-     
-
-  
         setLocation(730,250);
         setTitle("Watch");
         setSize(500,500);

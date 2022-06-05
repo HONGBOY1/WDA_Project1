@@ -57,10 +57,10 @@ public Swing28  () {
 
 
              setVisible(true);
-
+             Previous.setBounds(0, 0, 100, 100);
              Previous.addActionListener((e)->{
                  new Index();
-                setVisible(false);
+                 setVisible(false);
               });
 
        }

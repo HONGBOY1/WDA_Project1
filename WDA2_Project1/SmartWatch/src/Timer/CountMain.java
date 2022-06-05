@@ -11,11 +11,14 @@ import java.awt.event.TextEvent;
 import java.awt.event.TextListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+
 /*텍스트 창에 숫자를 입력하고 버튼을 누르면 그 숫자가 카운트되면서 출력되는 프로그램*/
 public class CountMain extends Frame implements TextListener, ActionListener{
 	Label lbl_info;//라벨을 생성합니다.
 	TextField txt1 = new TextField(15); //텍스트 창을 하나 생성합니다. 길이는 15로 합니다.
-	Button btn1 = new Button("Count"); //버튼을 하나 생성합니다. 
+	Button btn1 = new Button("시작"); //버튼을 하나 생성합니다. 
 	int i; //반복문 변수를 생성합니다.
 	String num=null; //텍스트 창에 입력한 숫자를 저장할 변수입니다.
 	int count; //입력한 숫자를 셀 변수를 생성합니다.
@@ -47,7 +50,7 @@ public class CountMain extends Frame implements TextListener, ActionListener{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		new CountMain("카운트다운"); //main에서 실행시킵니다
+		new CountMain("Timer"); //main에서 실행시킵니다
 	}
 
 	
@@ -64,8 +67,9 @@ public class CountMain extends Frame implements TextListener, ActionListener{
 		for(i=count; i>=0; i--){ //입력한 숫자를 셉니다.
 			try{
 				Thread.sleep(1000); //카운트 속도는 1초로 합니다.
-				result = "Count..." + i; //레이블에 출력할 문자열을 result에 대입힙나다.
+				result = i + "초"; //레이블에 출력할 문자열을 result에 대입힙나다.
 				lbl_info.setText(result); //레이블에 결과값을 등록합니다. 화면 하단에 카운트 결과가 출력됩니다.
+
 			}catch(InterruptedException a){ //예외 처리
 				System.out.println(a.getMessage()); //예외 처리 메시지를 출력합니다.
 				break;

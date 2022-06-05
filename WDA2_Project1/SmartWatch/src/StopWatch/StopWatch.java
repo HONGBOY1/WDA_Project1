@@ -73,6 +73,7 @@ package StopWatch;
             setDefaultCloseOperation(EXIT_ON_CLOSE);  
             setLocation(730, 280);  
             setResizable(false);  
+        
        
             setupBorder();  
             setupLabel();  
@@ -92,7 +93,7 @@ package StopWatch;
         //            
         private void setupBorder() {  
             JPanel contentPane = new JPanel(new BorderLayout());  
-            contentPane.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));  
+            contentPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));  
             this.setContentPane(contentPane);  
         }  
        
@@ -125,8 +126,8 @@ package StopWatch;
             } catch (Exception e) {  
                 e.printStackTrace();  
             }  
-       
-           StopWatch frame = new StopWatch("   "); 
+    
+            StopWatch frame = new StopWatch("스톱워치");  
             frame.pack();  
             frame.setVisible(true);
       
