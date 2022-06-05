@@ -6,7 +6,7 @@ package StopWatch;
     import java.awt.FlowLayout;  
     import java.awt.Font;  
     import java.awt.event.ActionListener;  
-    import java.awt.event.ActionEvent;  
+    import java.awt.event.ActionEvent;
        
     /** 
      *     
@@ -67,6 +67,7 @@ package StopWatch;
             setDefaultCloseOperation(EXIT_ON_CLOSE);  
             setLocation(300, 300);  
             setResizable(false);  
+        
        
             setupBorder();  
             setupLabel();  
@@ -81,7 +82,7 @@ package StopWatch;
         //            
         private void setupBorder() {  
             JPanel contentPane = new JPanel(new BorderLayout());  
-            contentPane.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));  
+            contentPane.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));  
             this.setContentPane(contentPane);  
         }  
        
@@ -108,7 +109,7 @@ package StopWatch;
                 e.printStackTrace();  
             }  
        
-            StopWatch frame = new StopWatch("   ");  
+            StopWatch frame = new StopWatch("스톱워치");  
             frame.pack();  
             frame.setVisible(true);  
         }  
