@@ -58,7 +58,7 @@ package StopWatch;
                 pauseCount = 0;  
                 thread.stopped = true;  
                 label.setText(INITIAL_LABEL_TEXT);  
-                startPauseButton.setText("  ");  
+                startPauseButton.setText("시작");  
             }  
         };  
        
