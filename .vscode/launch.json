@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TimeZonelds",
+            "request": "launch",
+            "mainClass": "WorldTime.TimeZonelds",
+            "projectName": "WDA_Project1_SmartWatch_dcecec32"
+        },
+        {
+            "type": "java",
+            "name": "Launch Timer",
+            "request": "launch",
+            "mainClass": "Timer.Timer",
+            "projectName": "WDA_Project1_SmartWatch_dcecec32"
+        },
+        {
+            "type": "java",
             "name": "Launch Index",
             "request": "launch",
             "mainClass": "Index.Index",
