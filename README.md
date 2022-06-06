@@ -100,8 +100,6 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 <img width="352" alt="KakaoTalk_20220606_164336573_04" src="https://user-images.githubusercontent.com/103193673/172118973-216dd30d-c6c1-468d-a11e-ac4a7e804ffa.png">
 
 
-# 실행영상 / 윈도우 버전
-
 # 실행영상 / 맥 버전
 
 # 깃//깃허브 활용
