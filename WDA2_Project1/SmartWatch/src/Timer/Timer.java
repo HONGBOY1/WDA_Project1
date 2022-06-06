@@ -100,17 +100,7 @@ public class Timer extends JFrame {
     }  
    
     //       
-    public static void main(String[] args) {  
-        try {  
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());  
-        } catch (Exception e) {  
-            e.printStackTrace();  
-        }  
-   
-        Timer frame = new Timer("   ");  
-        frame.pack();  
-        frame.setVisible(true);  
-    }  
+
    
     private class CountingThread extends Thread {  
    

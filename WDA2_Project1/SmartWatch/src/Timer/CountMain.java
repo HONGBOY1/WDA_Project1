@@ -72,11 +72,6 @@ public class CountMain extends Frame implements TextListener, ActionListener{
 		   
 		
 	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		new CountMain("Timer"); //main에서 실행시킵니다
-	}
-
 	
 	@Override
 	public void textValueChanged(TextEvent e) { //텍스트 창 이벤트를 구현하는 메소드입니다.

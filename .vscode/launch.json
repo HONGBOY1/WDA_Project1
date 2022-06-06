@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TimeZonelds",
+            "request": "launch",
+            "mainClass": "WorldTime.TimeZonelds",
+            "projectName": "WDA_Project1_79c152c2"
+        },
+        {
+            "type": "java",
             "name": "Launch CountMain",
             "request": "launch",
             "mainClass": "Timer.CountMain",

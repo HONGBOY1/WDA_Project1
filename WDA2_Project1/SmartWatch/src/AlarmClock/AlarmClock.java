@@ -45,22 +45,6 @@ public class AlarmClock {
     MP3Player mp3 = new MP3Player((getClass().getResource("../AlarmClock/wake.mp3")));
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					AlarmClock window = new AlarmClock();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
 	 * Create the application.
 	 */
 	public AlarmClock() {
