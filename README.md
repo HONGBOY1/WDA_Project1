@@ -122,6 +122,7 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 
 https://drive.google.com/file/d/1PyK3HwScyPNgxoeREsENZrs1WBBBP5gq/view?usp=sharing
 
+
 # 6. 깃,깃허브 활용
 ![날짜](https://user-images.githubusercontent.com/103193673/172121931-d3fa8203-8cdc-4d2c-a064-90b55322084a.PNG)
 ![커밋히스토리](https://user-images.githubusercontent.com/103193673/172121952-bb0be3e7-ac9a-41d0-a85f-b7eed11eb64e.PNG)
