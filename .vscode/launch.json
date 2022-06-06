@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CountMain",
+            "request": "launch",
+            "mainClass": "Timer.CountMain",
+            "projectName": "WDA_Project1_79c152c2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Timer",
+            "request": "launch",
+            "mainClass": "Timer.Timer",
+            "projectName": "WDA_Project1_79c152c2"
+        },
+        {
+            "type": "java",
             "name": "Launch AlarmClock",
             "request": "launch",
             "mainClass": "AlarmClock.AlarmClock",

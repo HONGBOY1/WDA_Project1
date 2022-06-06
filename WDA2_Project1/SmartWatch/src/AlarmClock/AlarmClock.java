@@ -42,8 +42,7 @@ public class AlarmClock {
     
     // download "jaco-mp3-player" JAR
     // change this MP3 directory w/ mp3 file of your choice
-    final static String PATH = "C:/WDA2_Project/WDA_Project1/WDA2_Project1/SmartWatch/bin/AlarmClock/wake.mp3";
-    MP3Player mp3 = new MP3Player(new File(PATH));
+    MP3Player mp3 = new MP3Player((getClass().getResource("../AlarmClock/wake.mp3")));
 
 	/**
 	 * Launch the application.
@@ -318,6 +317,23 @@ public class AlarmClock {
 	                        txt_mins.setText("");
 	                        txt_secs.setText("");
 	                        txt_ampm.setText("");
+
+							JFrame jf = new JFrame();
+						
+							jf.setVisible(true);
+							jf.setSize(200,200);
+							jf.setLocation(300,800);
+							JButton st = new JButton("중지");
+							jf.add(st);
+
+							st.addActionListener(new ActionListener() {
+								public void actionPerformed(ActionEvent e) {
+									flag = 2;
+									jf.setVisible(false);
+								}
+							});
+
+
 	                	} else if (flag == 2) {
 	                        mp3.stop();
 	                        lbl_AT.setText("00:00:00 --");

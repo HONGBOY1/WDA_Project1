@@ -72,6 +72,7 @@ public class Index extends JFrame {
         f.add(p3);
         f.add(p4);
         f.add(p5);
+        
         /**  
         * 이동하는 이벤트 버튼 
         */

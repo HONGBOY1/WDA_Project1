@@ -17,11 +17,10 @@ import Timer.Timer;
 import StopWatch.StopWatch;
 import AlarmClock.AlarmClock;
 import Index.Index;
+import Timer.CountMain;
 
 import java.awt.Font;
 import javax.swing.ImageIcon;
-
-
 
 public class App extends JFrame{
 
@@ -121,7 +120,9 @@ public class App extends JFrame{
 
         });
         btnTimer.addActionListener((e)->{
-            world.t1.interrupt();
+            new CountMain("Timer");
+            setVisible(false);
+            world.f1.setVisible(false);
         });
         btnWorldTime.addActionListener((e)->{
             ImageIcon WorldMap = new ImageIcon("WorldMap.png");
