@@ -120,7 +120,16 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 
 # 5. 실행영상 [맥 버전]
 
-https://drive.google.com/file/d/1PyK3HwScyPNgxoeREsENZrs1WBBBP5gq/view?usp=sharing
+<table>
+  <tr>
+    
+<td align="center"><a href="https://drive.google.com/file/d/1PyK3HwScyPNgxoeREsENZrs1WBBBP5gq/view?usp=sharing"><img src="https://user-images.githubusercontent.com/103193673/172194855-97c730db-2ff2-4c3a-b83a-eefe8367fc3d.png"
+width="750px;"</a></td>
+    </tr>                                                                             
+ 
+</table>
+
+
 
 
 # 6. 깃,깃허브 활용
