@@ -50,6 +50,7 @@ public class CountMain extends Frame implements TextListener, ActionListener{
 		panel2.add(panel); //패널2에 버튼과 텍스트창을 등록한 패널을 등록합니다.
 		font = new Font("Sherif",Font.BOLD,30); //폰트 기본값
 		lbl_info.setFont(font);
+	
 
 		Previous.addActionListener((e)->{
 			new App();
@@ -59,7 +60,7 @@ public class CountMain extends Frame implements TextListener, ActionListener{
 	
 
 		add("North", panel2); //패널 2는 화면 상단에 등록합니다.
-		add("Center",lbl_info); //화면 하단에 레이블을 등록합니다.
+		add("South",lbl_info); //화면 하단에 레이블을 등록합니다.
 		
 		setSize(350, 250); //윈도우 프레임의 크기를 정합니다.
 		setVisible(true); //화면에 보여집니다.
