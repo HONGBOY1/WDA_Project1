@@ -48,7 +48,7 @@ public class CountMain extends Frame implements TextListener, ActionListener{
 		panel.add(btn1); //패널에 버튼을 등록합니다. 윈도우 화면에 보여집니다.
 		panel.add(Previous); 
 		panel2.add(panel); //패널2에 버튼과 텍스트창을 등록한 패널을 등록합니다.
-		font = new Font("Sherif",Font.BOLD,35); //폰트 기본값
+		font = new Font("Sherif",Font.BOLD,30); //폰트 기본값
 		lbl_info.setFont(font);
 
 		Previous.addActionListener((e)->{
