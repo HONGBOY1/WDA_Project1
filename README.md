@@ -26,6 +26,11 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 
 ## 프로젝트 목적
 깃 // 깃허브 활용 및 자바실력 향상
+
+
+## 목차
+
+
 ## 다기능 워치 프로젝트
 각 파트 분배
 |박준홍|조규태|이정민|김탁영|류송지|
@@ -90,3 +95,21 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 
 # 계산기
 <img width="352" alt="KakaoTalk_20220606_164336573_04" src="https://user-images.githubusercontent.com/103193673/172118973-216dd30d-c6c1-468d-a11e-ac4a7e804ffa.png">
+
+
+# 실행영상 / 윈도우 버전
+
+# 실행영상 / 맥 버전
+
+# 깃//깃허브 활용
+![날짜](https://user-images.githubusercontent.com/103193673/172121931-d3fa8203-8cdc-4d2c-a064-90b55322084a.PNG)
+![커밋히스토리](https://user-images.githubusercontent.com/103193673/172121952-bb0be3e7-ac9a-41d0-a85f-b7eed11eb64e.PNG)
+![히스토리](https://user-images.githubusercontent.com/103193673/172121961-228765e7-06d6-40d3-9f99-eb9b9688737e.PNG)
+![브랜치2](https://user-images.githubusercontent.com/103193673/172122052-98365302-9649-4cb8-96d9-c8a27a809132.PNG)
+![브랜치](https://user-images.githubusercontent.com/103193673/172121995-b85d078e-434b-45d4-8e30-f8d7abc30943.PNG)
+![브랜치1](https://user-images.githubusercontent.com/103193673/172122077-a22392df-308d-43d3-9af7-b382e600be2e.PNG)
+![브랜치3](https://user-images.githubusercontent.com/103193673/172122086-5746d867-5622-4d8b-a82c-23fc02579199.PNG)
+![커밋내용2](https://user-images.githubusercontent.com/103193673/172122330-bdfc581f-5b44-47ce-9c71-e77678e5c35d.PNG)
+![커밋내용3](https://user-images.githubusercontent.com/103193673/172122360-ffd7f389-fe04-4621-b6ae-82df22f4962b.PNG)
+![커밋내용4](https://user-images.githubusercontent.com/103193673/172122384-98a55664-80a9-4e19-a927-84d74ed2537d.PNG)
+
