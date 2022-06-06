@@ -135,7 +135,7 @@ width="750px;"</a></td>
 
 # 6. 깃,깃허브 활용
 ![날짜](https://user-images.githubusercontent.com/103193673/172121931-d3fa8203-8cdc-4d2c-a064-90b55322084a.PNG)
-![커밋히스토리](https://user-images.githubusercontent.com/103193673/172121952-bb0be3e7-ac9a-41d0-a85f-b7eed11eb64e.PNG)
+![image](https://user-images.githubusercontent.com/103193673/172197460-dfd33e92-a9d4-418e-a31c-d84a650b6323.png)
 ![히스토리](https://user-images.githubusercontent.com/103193673/172121961-228765e7-06d6-40d3-9f99-eb9b9688737e.PNG)
 ![브랜치2](https://user-images.githubusercontent.com/103193673/172122052-98365302-9649-4cb8-96d9-c8a27a809132.PNG)
 ![브랜치](https://user-images.githubusercontent.com/103193673/172121995-b85d078e-434b-45d4-8e30-f8d7abc30943.PNG)
