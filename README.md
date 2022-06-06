@@ -67,7 +67,7 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 
 ## 3. 기능 설명 // 윈도우 버전 
 
-메인화면 
+## 메인화면 
 
 ![메인화면](https://user-images.githubusercontent.com/103193673/172114267-1be5643e-7757-4167-b5b9-0b7266ccf4b9.PNG)
 
@@ -99,7 +99,8 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 ![계산기](https://user-images.githubusercontent.com/103193673/172115920-eb93f77d-7dc1-4183-912a-03189a76b960.PNG)
 
 ## 4. 기능 설명 [맥 버전] 
-메인화면
+
+## 메인화면
 
 <img width="562" alt="KakaoTalk_20220606_164336573" src="https://user-images.githubusercontent.com/103193673/172118567-9b787945-2f17-4b9c-8e88-cee061f51858.png">
 
