@@ -50,7 +50,7 @@ public class App extends JFrame{
    }
 
     public App() {  // App  실행 함수
-       font = new Font("Sherif",Font.BOLD,35); //폰트 기본값
+       font = new Font("Sherif",Font.BOLD,30); //폰트 기본값
 
         WorldTime world = new WorldTime();   // 세계시간 메소드 불러 오기
         
