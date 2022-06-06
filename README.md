@@ -63,3 +63,30 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 ![맵2](https://user-images.githubusercontent.com/103193673/172115945-6ad2ebbe-f813-4ddf-aa00-83848a9dff36.PNG)
 # 계산기
 ![계산기](https://user-images.githubusercontent.com/103193673/172115920-eb93f77d-7dc1-4183-912a-03189a76b960.PNG)
+
+## 기능 설명 // 맥 버전 
+메인화면
+
+<img width="562" alt="KakaoTalk_20220606_164336573" src="https://user-images.githubusercontent.com/103193673/172118567-9b787945-2f17-4b9c-8e88-cee061f51858.png">
+
+# 4개기능
+<img width="67" alt="맥 계산기" src="https://user-images.githubusercontent.com/103193673/172118640-63ea8c06-5fa5-4b35-b478-ae51660368ab.png">
+<img width="70" alt="맥 메인" src="https://user-images.githubusercontent.com/103193673/172118646-f58c416e-b0bf-459a-8748-aa3659d539eb.png">
+<img width="64" alt="맥 시계" src="https://user-images.githubusercontent.com/103193673/172118648-48e857dd-0a24-43f8-b109-a2bae8d78a71.png">
+<img width="73" alt="맥 지도" src="https://user-images.githubusercontent.com/103193673/172118649-438c7cbd-b3d5-4c30-a65a-84358c4fb79b.png">
+
+# 달력
+<img width="662" alt="KakaoTalk_20220606_164336573_01" src="https://user-images.githubusercontent.com/103193673/172118840-87055888-37bc-423f-91c1-6499a2d6d190.png">
+
+# 시계
+<img width="568" alt="KakaoTalk_20220606_164336573_05" src="https://user-images.githubusercontent.com/103193673/172119161-85b26349-8685-4910-97d3-1bc07af5e976.png">
+<img width="982" alt="KakaoTalk_20220606_164336573_06" src="https://user-images.githubusercontent.com/103193673/172119178-5ebf1369-ebc2-49d9-ba87-bad310dfe767.png">
+<img width="464" alt="KakaoTalk_20220606_164336573_09" src="https://user-images.githubusercontent.com/103193673/172119191-4dc0ce6a-1e77-4a1d-84b2-9e7ea2e6a09b.png">
+<img width="396" alt="KakaoTalk_20220606_164336573_12" src="https://user-images.githubusercontent.com/103193673/172119204-d298d575-ab2b-4492-9e9b-0efffd4c225b.png">
+
+# 지도
+<img width="652" alt="KakaoTalk_20220606_164336573_02" src="https://user-images.githubusercontent.com/103193673/172118898-7110e2dd-6966-40a5-9604-3acda850b7fe.png">
+<img width="724" alt="KakaoTalk_20220606_164336573_03" src="https://user-images.githubusercontent.com/103193673/172118907-c41e4f00-5366-4eff-a04f-3ada8cca511b.png">
+
+# 계산기
+<img width="352" alt="KakaoTalk_20220606_164336573_04" src="https://user-images.githubusercontent.com/103193673/172118973-216dd30d-c6c1-468d-a11e-ac4a7e804ffa.png">
