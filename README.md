@@ -46,10 +46,10 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 
 
 **6. 깃,깃허브 활용**
-## 프로젝트 목적
+## 1. 프로젝트 목적
 깃 // 깃허브 활용 및 자바실력 향상
 
-## 다기능 워치 프로젝트
+## 2. 다기능 워치 프로젝트
 각 파트 분배
 |박준홍|조규태|이정민|김탁영|류송지|
 |---|---|---|---|---|
@@ -57,7 +57,7 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 |지 도|계산기|달 력|이미지 조사|사운드 조사|
 
 
-## 기능 설명 // 윈도우 버전 
+## 3. 기능 설명 // 윈도우 버전 
 
 메인화면 
 
@@ -90,7 +90,7 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 # 계산기
 ![계산기](https://user-images.githubusercontent.com/103193673/172115920-eb93f77d-7dc1-4183-912a-03189a76b960.PNG)
 
-## 기능 설명 [맥 버전] 
+## 4. 기능 설명 [맥 버전] 
 메인화면
 
 <img width="562" alt="KakaoTalk_20220606_164336573" src="https://user-images.githubusercontent.com/103193673/172118567-9b787945-2f17-4b9c-8e88-cee061f51858.png">
@@ -118,9 +118,9 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 <img width="352" alt="KakaoTalk_20220606_164336573_04" src="https://user-images.githubusercontent.com/103193673/172118973-216dd30d-c6c1-468d-a11e-ac4a7e804ffa.png">
 
 
-# 실행영상 [맥 버전]
+# 5. 실행영상 [맥 버전]
 
-# 깃,깃허브 활용
+# 6. 깃,깃허브 활용
 ![날짜](https://user-images.githubusercontent.com/103193673/172121931-d3fa8203-8cdc-4d2c-a064-90b55322084a.PNG)
 ![커밋히스토리](https://user-images.githubusercontent.com/103193673/172121952-bb0be3e7-ac9a-41d0-a85f-b7eed11eb64e.PNG)
 ![히스토리](https://user-images.githubusercontent.com/103193673/172121961-228765e7-06d6-40d3-9f99-eb9b9688737e.PNG)
