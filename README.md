@@ -56,6 +56,8 @@ width="100px;" alt=""/><br /><sub><b>류송지</b></sub></a><br /><a href="https
 
 ## 2. 다기능 워치 프로젝트
 
+![초기컨셉](https://user-images.githubusercontent.com/103193673/172512076-c2abf777-dfc9-49ad-824a-aeb065bc9c18.png)
+
 부제 : **파인애플** 워치
 
 각 파트 분배
